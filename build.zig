@@ -33,8 +33,19 @@ pub fn build(b: *std.Build) void {
         "spinel_calc_entropy",
         "spinel_detect_format",
         "spinel_sliding_window",
+        // 0.2.0
+        "spinel_version",
+        "spinel_window_count",
+        "spinel_inspect",
+        "spinel_sections",
+        "spinel_high_entropy_regions",
+        "spinel_block_diff",
+        "spinel_histogram_distance",
+        "spinel_buffer",
     };
     b.installArtifact(wasm);
+    const wasm_step = b.step("wasm", "Build only the WebAssembly module (zig-out/bin/spinel.wasm)");
+    wasm_step.dependOn(&b.addInstallArtifact(wasm, .{}).step);
 
     // Test runner
     const unit_tests = b.addTest(.{
