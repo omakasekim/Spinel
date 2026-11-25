@@ -1,6 +1,6 @@
 # Spinel (고엔트로피 바이너리 섹션 맵 & 구조적 Diff 엔진)
 
-[English](README.md) · [라이선스](LICENSE) · [라이브 워크벤치](https://aetherx86.github.io/spinel/)
+[English](README.md) · [라이선스](LICENSE) · [라이브 워크벤치](https://omakasekim.github.io/spinel/)
 
 Spinel은 ELF, Mach-O, PE/COFF 바이너리를 초고속으로 파싱하여 슬라이딩 윈도우 섀넌 엔트로피(Shannon Entropy)를 계산하고, 패킹 및 난독화 서명을 감지하며, 터미널 유니코드 브라유(Braille) 밀도 맵을 렌더링하는 헤드리스 분석 엔진입니다.
 
